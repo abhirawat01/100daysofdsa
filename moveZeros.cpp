@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int moveZeros(int a[], int n)
+int moveZeros(int *a, int n)
 {
     int j = -1;
     for (int i = 0; i < n; i++)
@@ -29,7 +29,6 @@ int moveZeros(int a[], int n)
             ++j;
         }
     }
-    return a;
 }
 
 int main()
